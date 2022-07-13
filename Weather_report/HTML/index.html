@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather report</title>
+    <link rel="stylesheet" href="/home/sulagna/Desktop/full_stack/Weather_report/CSS/styles.css">
+    <script src="https://kit.fontawesome.com/0142ae0a0c.js" crossorigin="anonymous"></script>
+
+   <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src ="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  <script src="/home/sulagna/Desktop/full_stack/Weather_report/Javascript/index.js"></script>
+    <section class="v_navbar">
+        <div class="row">
+            <div class="col-3">
+            <nav class ="navbar">
+                <div class="text">
+                    <table><tr><td>
+                        <img src="/home/sulagna/Desktop/full_stack/Weather_report/Images/thermometer.png" height="30px" width="30px" alt="not avaliable">
+                    </td>
+                    <td></td>
+                    <td>
+                        <h4 ><strong>METEOROLOG</strong></h4>
+                    </td>
+                  </tr>
+                   </table>
+                    </div>
+                    <div class="list">
+                   <table id="list" >
+                    <tr>
+                      <td class="item"><img  src="https://www.iconsdb.com/icons/preview/white/grid-two-up-xxl.png" height="15px" width="15px" alt="not avaliable"></td>
+                      <td class="item"><a style="color: #e6e8f0;" href="#"><strong>Dashboard</strong></a></td>
+                    </tr><tr>
+                    <td class="item"><i class="fa-solid fa-chart-simple"></i> </td>
+                    <td class="item"><a style="color: #e6e8f0;" href="#"><strong>Statistics</strong></a></td></tr>
+                    <tr>
+                      <td class="item">
+                        <i class="fa-solid fa-map-location"></i>
+                      </td>
+                      <td class="item"><a  style="color: #e6e8f0;" href="#"> <strong>Map</strong> </a></td>
+                    </tr>
+                    <tr>
+                      <td class="item"><i class="fa-solid fa-calendar"></i></td>
+                      <td class="item"><a style="color: #e6e8f0;" href="#"> <strong>Calendar </strong></a></td>
+                    </tr>
+                    <tr>
+                      <td class="item">
+                        <i class="fa-solid fa-gear"></i>
+                      </td>
+                      <td class="item"><a  style="color: #e6e8f0;" href="#" > <strong>Setting</strong></a></td>
+                    </tr>
+                   </table>
+                   </div>
+            </nav>
+            </div></div>
+            <div class="temparature">
+                <div id="temparature">
+                   <table>
+                    <tr>
+                      <th><img src="/home/sulagna/Desktop/full_stack/Weather_report/Images/cloud.png" height="30px" width="30px" alt="not avaliable"></th>
+                      <td style="text-align: left;">Today<br></td>
+                        
+                       
+                    </tr>
+                   </table> <p style="text-align:left;margin-left: 20%;">11:44<br>Mon,11 January</p><br>
+                   <h4>+4°C</h4>
+                   <h5><strong>NEW YORK</strong></h5>United States
+                    <form>
+                        <div class="form-group">
+                            <label for="formControlRange">Humidity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;70%</label>
+                            
+                          <input type="range" class="form-control-range" id="formControlRange" onInput="$('#rangeval').html($(this).val())"></div>
+                          <div class="form-group"><label for="formControlRange">Precipitation  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25%</label>
+                           <input type="range" class="form-control-range" id="formControlRange" onInput="$('#rangeval').html($(this).val())">
+                            </div></form>
+                            Wind:&nbsp;&nbsp;&nbsp;&nbsp;<img src="/home/sulagna/Desktop/full_stack/Weather_report/Images/speedometer.png" height="30px" width="30px" alt="not avaliable">&nbsp;&nbsp;4.5 km/h
+                        </div>
+                      
+                            </div>
+            
+                
+                
+    </section>
+    <sectiion >
+              <nav class="navbar navbar-light bg-white">
+                    <div class="container-fluid">
+                      <form class="d-flex">
+                        <img class="search" src="/home/sulagna/Desktop/full_stack/Weather_report/Images/search.png" height="50px" width="50px" alt="not avaliable"> 
+                        <input class="pannel form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                         </form>
+                         <div class="name">
+                            &nbsp;&nbsp;
+                            <img src="/home/sulagna/Desktop/full_stack/Weather_report/Images/bell.png" height="40px" width="40px" alt="not avaliable" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            
+                            <img class="face" src="/home/sulagna/Desktop/full_stack/Weather_report/Images/face.png" height="40px" width="40px" alt="not avaliable">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <a class="navbar-brand">Sulagna Giri</a>
+                         </div>
+                    </div>
+                  </nav><br>
+                  <h2 class="heading"><strong>Weather Forecast</strong> </h2>
+                  <div class="pictures">
+                  <div class=" row">
+                    <div class="col-lg-2">
+                      <div class="card" style="width: 17rem;border:0;">
+                        <div class="card-body">
+                           <div class="fill"> <img src="/home/sulagna/Desktop/full_stack/Weather_report/Images/Amsterdam.jpg" class="card-img-top" alt="not avaliable">
+                            <div class="bottom-left"><div class="sun">☀️</div>
+                            <div class="number">12:31</div></div>
+                            
+                        </div><br>
+                        <strong>Amsterdam</strong>
+                         
+                         
+                        </div>
+                      </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-lg-2 " >
+                      <div class="card" style="width: 17rem;border:0;">
+                        <div class="card-body">
+                           <div class="fill"> <img src="/home/sulagna/Desktop/full_stack/Weather_report/Images/London.jpg" class="card-img-top" alt="not avaliable">
+                            <div class="bottom-left"><div class="sun">☀️</div>
+                            <div class="number">16:44</div></div>
+                          </div><br>
+                          <strong>London</strong>
+                        
+                        </div>
+                      </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-lg-2">
+                        <div class="card" style="width: 17rem ;border:0;">
+                          <div class="card-body">
+                           <div class="fill"> <img src="https://media.radissonhotels.net/image/destination-pages/localattraction/16256-118729-f63244169_3xl.jpg?impolicy=CustomCrop&cwidth=670&cheight=384" class="card-img-top" alt="not avaliable">
+                            <div class="bottom-left"><div class="sun">🌙</div>
+                            <div class="number">21:30</div></div>
+                         
+                          </div><br><strong>Budapest</strong>
+                            
+                            
+                          </div>
+                        </div>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="col-lg-2">
+                        <div class="card" style="width: 17rem;border:0;">
+                          <div class="card-body">
+                           <div class="fill"> <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/01/Places-To-Visit-In-Paris_11th-jun.jpg" class="card-img-top" alt="not avaliable">
+                            <div class="bottom-left"><div class="sun">☀️</div>
+                            <div class="number">16:12</div></div>
+                          </div><br><strong> Paris</strong>
+                           
+                            
+                          </div>
+                        </div>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <div class="col-lg-2" >
+                        <div class="card" style="width: 17rem;border:0;">
+                          <div class="card-body">
+                           
+                           <div class="fill"> <img src="/home/sulagna/Desktop/full_stack/Weather_report/Images/chicago.jpg" class="card-img-top" alt="not avaliable">
+                          
+                            <div class="bottom-left"><div class="sun">🌙</div>
+                            <div class="number">22:15</div></div>
+                          </div><br><strong> Chicago</strong>
+                           
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="box">
+                  <h4 ><strong>London</strong></h4>
+                  <div class="box1">
+                  <div class="container text-center my-3">
+                    <div class="row mx-auto my-auto">
+                        <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item py-5 active">
+                                    <div class="row">
+                                        <div class="city col-sm-1.7">
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/2698/2698213.png" height="30px" width="30px" alt="not avaliable">
+                                                <p class="card-text">-5/+4<br>11 Mon
+                                                </p>
+                                               
+                                              </div>
+                                            </div>
+                                          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="col-sm-1.7">
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" height="30px" width="30px" alt="not avaliable">
+                                                <p class="card-text">-5/+4<br>12 Tue</p>
+                                               
+                                              </div>
+                                            </div>
+                                         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="col-sm-1.7">
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/890/890347.png" height="30px" width="30px" alt="not avaliable">
+                                                <p class="card-text">-5/+4<br>13 Wed</p>
+                                                
+                                              </div>
+                                            </div>
+                                         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="col-sm-1.7">
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/414/414927.png" height="30px" width="30px" alt="not avaliable">
+                                            
+                                                <p class="card-text">-5/+4<br>14 Thu</p>
+                                                
+                                              </div>
+                                            </div>
+                                         </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="col-sm-1.7">
+                                          <div class="card">
+                                            <div class="card-body">
+                                              <img src="https://cdn-icons-png.flaticon.com/512/890/890347.png" height="30px" width="30px" alt="not avaliable">
+                                              <p class="card-text">-5/+4<br>15 Fri</p>
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="col-sm-1.7">
+                                           <div class="card">
+                                            <div class="card-body">
+                                               <img src="https://cdn-icons-png.flaticon.com/512/2698/2698213.png" height="30px" width="30px" alt="not avaliable">
+                                               <p class="card-text">-5/+4<br>16 Sat</p>
+                                      
+                                        </div>
+                                             </div>
+                                                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="col-sm-1.7">
+                                           <div class="card">
+                                            <div class="card-body">
+                                              <img src="https://cdn-icons-png.flaticon.com/512/826/826957.png" height="30px" width="30px" alt="not avaliable">
+                                              <p class="card-text">-5/+4<br>17 Sun</p>
+                                            </div>
+                                          </div>
+                                        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="col-sm-1.7">
+                                          <div class="card">
+                                           <div class="card-body">
+                                              <img src="https://cdn-icons-png.flaticon.com/512/2698/2698213.png" height="30px" width="30px" alt="not avaliable">
+                                              <p class="card-text">-5/+4<br>18 Mon</p>
+                                     
+                                       </div>
+                                            </div>
+                                            
+                                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <div class="city1 col-sm-1.7">
+                                      <div class="card">
+                                       <div class="card-body">
+                                          <img src="https://cdn-icons-png.flaticon.com/512/2698/2698213.png" height="30px" width="30px" alt="not avaliable">
+                                          <p class="card-text">-5/+4<br>19 Tue</p>
+                                 
+                                   </div>
+                                        </div></div>
+                                        
+                                  
+                                  
+                                  </div></div>
+                                  
+                                <div class="carousel-item py-5">
+                                    <div class="row">
+                                        <div class="city col-sm-1.7">
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/890/890347.png" height="30px" width="30px" alt="not avaliable">
+                                                <p class="card-text">-5/+4<br>20 Wed</p>
+                                              
+                                              </div>
+                                            </div>
+                                        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="col-sm-1.7">
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/2698/2698213.png" height="30px" width="30px" alt="not avaliable">
+                                                <p class="card-text">-5/+4<br>21 Thu</p>
+                                                
+                                              </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    </div></div></div>
+                                <div class="arrow row">
+                                  <div class="col-12">
+                                      <a class="control-next text-dark" href="#myCarousel" role="button" data-slide="next">
+                                          <span class="arrow1 fa fa-chevron-right" aria-hidden="true"></span>
+                                          <span class="sr-only">Next</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+            <div class="graph">
+              <h4><strong>Weather Graph</strong></h4>
+              <div class="graph1">
+                Day | Week | 10 Days | 15 Days
+                <div class="right">
+                <div class="celcius">Temparature(°C)&nbsp;&nbsp;&nbsp;&nbsp;|<img src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1657619387~hmac=0dc2333a537b1a904c74f79e51129681" height="30px" width="30px" alt="not avaliable">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <div class="line">
+                    <img src="https://cdn-icons-png.flaticon.com/512/7599/7599746.png"height="45px" width="100px" alt="not avaliable">&nbsp;&nbsp;&nbsp;&nbsp;|<img src="https://cdn-icons.flaticon.com/png/512/2985/premium/2985150.png?token=exp=1657619387~hmac=0dc2333a537b1a904c74f79e51129681" height="30px" width="30px" alt="not avaliable">
+                   </div>&nbsp;&nbsp;&nbsp;&nbsp;
+                   <div class="full_screen">
+                    <img src="https://cdn-icons.flaticon.com/png/512/6051/premium/6051014.png?token=exp=1657621107~hmac=71a68c4b77774b07a8df41e7d0ea8243"height="30px" width="30px" alt="not avaliable">
+                   
+
+                   </div>
+                </div>
+                <br><br><br>
+                <div><img src="/home/sulagna/Desktop/full_stack/Weather_report/Images/graph.jpeg" height="200px" width="1250px"alt="not avaliable">
+                </div> 
+                
+                
+            </div> 
+            </div>
+                         
+                
+                
+                
+                
+
+
+    </section >
+</body>
+</html>

@@ -1,0 +1,220 @@
+body{
+    position: fixed;
+}
+
+.v_navbar
+{
+    background: linear-gradient(to bottom, #000099 0%, #6600cc 100%);
+  float:left;
+  height:1100px;
+  width:330px;
+  color:white;
+}
+.nav-item
+{
+    color:white;
+}
+.text
+{
+    margin:60% 90% 300%;
+   
+}
+.list
+{
+   margin-left:130%;
+  
+}
+#list
+{
+    border-collapse: collapse;}
+.item
+{
+    padding: 6px;
+}
+.menu
+{
+   margin:5px 50% 10%;
+   display: flex;
+   justify-content:space-between;
+   color:white;
+}
+a
+{
+   color: #e6e8f0;
+}
+
+.temparature
+{
+    margin-top: 130px;
+    background-color: white;
+    height:430px;
+    width:210px;
+    margin-left:15%;
+    border-radius: 20px;
+    color:black;
+    
+    
+    
+}
+#temparature
+{
+    text-align: center;
+    padding:10%
+}
+.form-group
+{
+    text-align: left;
+}
+.details
+{
+    
+    float:right;
+}
+.search
+{
+    background-color: #C6DCE4;
+    padding:5%;
+    margin-left: 5%;
+    margin-right: 3%;
+    margin-top: 5%;
+    border-radius :8px;;
+    
+}
+.pannel
+{
+    margin-top: 7%;
+    
+    
+}
+
+.name
+{
+  background-color: #DDDDDD;
+  width:400px;
+  padding:10px;
+  border-radius: 10px;
+  margin-top: 1%;
+  margin-right: -5%;
+  
+}
+.face
+{
+    border-radius: 100%;
+    background-color: #F56D91;
+
+}
+.pictures
+{
+    margin-left:25%;
+    text-align: center;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+   
+    
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+.bottom-left
+{
+    position: absolute;
+    height: 25%;
+    background-color: white;
+    width: 39%;
+    margin-top: 36%;
+    margin-bottom: auto;
+    margin-left: 66%;
+    font-size: 15px;
+   border-top-left-radius: 20px;
+}
+.sun
+{
+    margin-left: 30%;
+}
+.number
+{
+    margin-left: 18%;
+    text-align:left;
+}
+.heading{
+    margin-left:26%;
+    margin-top: .6%;
+}
+.box
+{
+    margin-left:26.6%;
+   
+}
+.box1{
+   
+    margin-top:-30px !important;  
+    
+    
+}
+.city
+{
+    margin-left: 2%;
+    border-radius: 50px !important;
+
+}
+
+.arrow
+{
+    position: relative;
+}
+
+.arrow1
+{
+    position: absolute;
+    margin-left: 50%; 
+    margin-top: -110px;
+}
+.graph
+{
+    margin-left: 26.6%;
+    
+}
+.graph1
+{
+    background-color: #F1EEE9;
+    width:1300px;
+    height:300px;
+    border-radius: 20px;
+    padding:20px;
+    
+}
+.right
+{
+    float: right;
+    display: table;
+}
+.celcius
+{
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding:10px;
+}
+.line
+{
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding:10px;
+
+}
+.full_screen
+{
+    display: inline-block;
+    background-color: white;
+    border-radius: 20px;
+    padding:10px;
+}
