@@ -1,0 +1,26 @@
+{
+  "name": "weather_report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.4",
+    "body-parser": "^1.20.0",
+    "chart": "^0.1.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-messages": "^1.0.1",
+    "https": "^1.0.0",
+    "jquery": "^3.6.0",
+    "JSON": "^1.0.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.34",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather report</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <script src="https://kit.fontawesome.com/0142ae0a0c.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+  <section class="v_navbar">
+    <div class="row">
+      <div class="col-3">
+        <nav class="navbar">
+          <div class="text">
+            <table>
+              <tr>
+                <td>
+                  <img src="Images/thermometer.png" height="30px" width="30px" alt="not avaliable">
+                </td>
+                <td></td>
+                <td>
+                  <h4><strong>METEOROLOG</strong></h4>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="list">
+            <table id="list">
+              <tr>
+                <td class="item"><img src="Images/dashboard.png" height="15px" width="15px" alt="not avaliable"></td>
+                <td class="item"><a style="color: #e6e8f0;" href="#"><strong>Dashboard</strong></a></td>
+              </tr>
+              <tr>
+                <td class="item"><i class="fa-solid fa-chart-simple"></i> </td>
+                <td class="item"><a style="color: #e6e8f0;" href="#"><strong>Statistics</strong></a></td>
+              </tr>
+              <tr>
+                <td class="item">
+                  <i class="fa-solid fa-map-location"></i>
+                </td>
+                <td class="item"><a style="color: #e6e8f0;" href="#"> <strong>Map</strong> </a></td>
+              </tr>
+              <tr>
+                <td class="item"><i class="fa-solid fa-calendar"></i></td>
+                <td class="item"><a style="color: #e6e8f0;" href="#"> <strong>Calendar </strong></a></td>
+              </tr>
+              <tr>
+                <td class="item">
+                  <i class="fa-solid fa-gear"></i>
+                </td>
+                <td class="item"><a style="color: #e6e8f0;" href="#"> <strong>Setting</strong></a></td>
+              </tr>
+            </table>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="temparature">
+      <div id="temparature">
+        <table>
+          <tr>
+            <th> <img src="<%=icon%>" alt="img" width="30px" height="30px">
+            </th>
+            <td style="text-align: left;">Today<br></td>
+
+          </tr>
+        </table>
+        <p style="text-align:left;margin-left: 20%;">
+          <%=timeNewyork%><br>
+            <%=daytimeNewyork%>,<%=dayNewyork %>
+                <%=monthNewyork%>
+        </p><br>
+        <h4>
+          <%= tem %>°C
+        </h4>
+
+
+        <h5><strong>
+            <%=nameCity%>
+          </strong></h5>
+
+        <form>
+          <div class="form-group">
+            <label for="formControlRange">Humidity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <%=humidityNewyork%>%
+            </label>
+            <input type="range" class="form-control-range" id="formControlRange"
+              onInput="$('#rangeval').html($(this).val())">
+
+
+
+          </div>
+          <div class=" form-group"><label for="formControlRange">Prssure
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=pressureNewyork%></label>
+
+          </div>
+        </form>
+        Wind:&nbsp;&nbsp;&nbsp;&nbsp;<img src="Images/speedometer.png" height="30px" width="30px"
+          alt="not avaliable">&nbsp;&nbsp;<%=wind%> km/h
+      </div>
+    </div>
+  </section>
+  <sectiion>
+    <nav class="navbar navbar-light bg-white">
+      <div class="container-fluid">
+        <form class="d-flex" action="/" method="post">
+          <img class="search" src="Images/search.png" height="50px" width="50px" alt="not avaliable">
+          <input name="cityName" class="pannel form-control me-2" type="search" placeholder="Search" Id="searchForm"
+            aria-label="Search">
+
+        </form>
+        <div class="name">
+          &nbsp;&nbsp;
+          <img src="Images/bell.png" height="40px" width="40px"
+            alt="not avaliable">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img class="face" src="Images/face.png" height="40px" width="40px"
+            alt="not avaliable">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="navbar-brand">Sulagna Giri</a>
+        </div>
+      </div>
+    </nav><br>
+    <h2 class="heading"><strong>Weather Forecast</strong> </h2>
+    <div class="pictures">
+      <div class=" row">
+        <div class="col-lg-2">
+          <div class="card" style="width: 17rem;border:0;">
+            <div class="card-body">
+              <div class="fill"> <img src="Images/Amsterdam.jpg" class="card-img-top" alt="not avaliable">
+                <div class="bottom-left">
+                  <div class="sun sun1"></div>
+                  <div class="number1 number"></div>
+                </div>
+              </div><br>
+              <strong>Amsterdam</strong>
+            </div>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-lg-2 ">
+          <div class="card" style="width: 17rem;border:0;">
+            <div class="card-body">
+              <div class="fill"> <img src="Images/London.jpg" class="card-img-top" alt="not avaliable">
+                <div class="bottom-left">
+                  <div class="sun2 sun"></div>
+                  <div class="number number2"></div>
+                </div>
+              </div><br>
+              <strong>London</strong>
+            </div>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-lg-2">
+          <div class="card" style="width: 17rem ;border:0;">
+            <div class="card-body">
+              <div class="fill"> <img
+                  src="https://media.radissonhotels.net/image/destination-pages/localattraction/16256-118729-f63244169_3xl.jpg?impolicy=CustomCrop&cwidth=670&cheight=384"
+                  class="card-img-top" alt="not avaliable">
+                <div class="bottom-left">
+                  <div class="sun3 sun"></div>
+                  <div class="number number3"></div>
+                </div>
+
+              </div><br><strong>Budapest</strong>
+            </div>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-lg-2">
+          <div class="card" style="width: 17rem;border:0;">
+            <div class="card-body">
+              <div class="fill"> <img
+                  src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/01/Places-To-Visit-In-Paris_11th-jun.jpg"
+                  class="card-img-top" alt="not avaliable">
+                <div class="bottom-left">
+                  <div class="sun sun4"></div>
+                  <div class="number number4"></div>
+                </div>
+              </div><br><strong> Paris</strong>
+
+
+            </div>
+          </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-lg-2">
+          <div class="card" style="width: 17rem;border:0;">
+            <div class="card-body">
+
+              <div class="fill"> <img src="Images/chicago.jpg" class="card-img-top" alt="not avaliable">
+
+                <div class="bottom-left">
+                  <div class="sun sun5"></div>
+                  <div class="number number5"></div>
+                </div>
+              </div><br><strong> Chicago</strong>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <h4><strong>
+          <%=nameCity%>
+        </strong></h4>
+      <div class="box1">
+        <div class="container text-center my-3">
+          <div class="row mx-auto my-auto">
+            <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item py-5 active">
+                  <div class="row">
+                    <div class="city col-sm-1.7">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="<%=iconCity[0]%>" height="40px" width="40px" alt="not avaliable">
+                          <p class="card-text">
+                            <%=minTemp[0]%>-
+                              <%=maxTem[0]%>
+                                <br>
+                                <%=dayCity[0]%>
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-sm-1.7">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="<%=iconCity[1]%>" height="40px" width="40px" alt="not avaliable">
+                          <p class="card-text">
+                            <%=minTemp[1]%>-
+                              <%=maxTem[1]%><br>
+                                <%=dayCity[1]%>
+
+
+                          </p>
+                        </div>
+                      </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-sm-1.7">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="<%=iconCity[2]%>" height="40px" width="40px" alt="not avaliable">
+
+                          <p class="card-text">
+                            <%=minTemp[2]%>-
+                              <%=maxTem[2]%><br>
+                                <%=dayCity[2]%>
+                        </div>
+                      </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-sm-1.7">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="<%=iconCity[3]%>" height="40px" width="40px" alt="not avaliable">
+
+
+                          <p class="card-text">
+                            <%=minTemp[3]%>-
+                              <%=maxTem[3]%><br>
+                                <%=dayCity[3]%>
+                        </div>
+                      </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-sm-1.7">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="<%=iconCity[4]%>" height="40px" width="40px" alt="not avaliable">
+
+                          <p class="card-text">
+                            <%=minTemp[4]%>-
+                              <%=maxTem[4]%><br>
+                                <%=dayCity[4]%>
+                        </div>
+                      </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-sm-1.7">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="<%=iconCity[5]%>" height="40px" width="40px" alt="not avaliable">
+
+                          <p class="card-text">
+                            <%=minTemp[5]%>-
+                              <%=maxTem[5]%><br>
+                                <%=dayCity[5]%>
+
+
+                        </div>
+                      </div>
+                    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="col-sm-1.7">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="<%=iconCity[6]%>" height="40px" width="40px" alt="not avaliable">
+
+                          <p class="card-text">
+                            <%=minTemp[6]%>-
+                              <%=maxTem[6]%><br>
+                                <%=dayCity[6]%>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+
+                <div class="carousel-item py-5">
+                  <div class="row">
+                    <div class="city col-sm-1.7">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="<%=iconCity[7]%>" height="40px" width="40px" alt="not avaliable">
+
+                          <p class="card-text">
+                            <%=minTemp[7]%>-
+                              <%=maxTem[7]%><br>
+                                <%=dayCity[7]%>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow row">
+            <div class="col-12">
+              <a class="control-next text-dark" href="#myCarousel" role="button" data-slide="next">
+                <span class="arrow1 fa fa-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="graph">
+      <h4><strong>Weather Graph</strong></h4>
+      <div class="graph1">
+        Day | Week | 10 Days | 15 Days
+        <div class="right">
+          <div class="celcius">Temparature(°C)&nbsp;&nbsp;&nbsp;&nbsp;|<img src="Images/2985150.png" height="30px"
+              width="30px" alt="not avaliable">
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="line">
+            <img src="https://cdn-icons-png.flaticon.com/512/7599/7599746.png" height="45px" width="100px"
+              alt="not avaliable">&nbsp;&nbsp;&nbsp;&nbsp;|<img src="Images/2985150.png" height="30px" width="30px"
+              alt="not avaliable">
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="full_screen">
+            <img src="Images/2926135.png" height="30px" width="30px" alt="not avaliable">
+
+
+          </div>
+        </div>
+        <br><br><br>
+
+        <!-- <div><img src="Images/graph.jpeg" height="200px" width="1250px" alt="not avaliable">
+        </div> -->
+        <center>
+          <div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </center>
+
+
+
+      </div>
+    </div>
+    </section>
+    <script src="JS/weather.js"> </script>
+
+
+</body>
+
+</html>
